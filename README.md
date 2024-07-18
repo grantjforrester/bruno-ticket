@@ -10,7 +10,7 @@ REST API testing exercise with Bruno.
 
 3. Select 'Open Collection' and select the cloned repository folder. 
 
-4. Set environmnet to 'debug-ticket' and check values are correct.
+4. Set environmnet to 'local-ticket' and check values are correct.
 
 5. Start application and any dependencies.
 

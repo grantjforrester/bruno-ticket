@@ -1,0 +1,15 @@
+meta {
+  name: Delete ticket
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{ticket-service}}/tickets/:id
+  body: none
+  auth: none
+}
+
+params:path {
+  id: blah
+}

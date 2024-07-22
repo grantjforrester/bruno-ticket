@@ -5,11 +5,18 @@ meta {
 }
 
 post {
-  url: {{ticket-service}}/tickets
+  url: {{ticket-service}}/api/v1/tickets
   body: json
   auth: none
 }
 
+headers {
+  content-type: application/json
+}
+
 body:json {
-  "foo"
+    {
+      "summary": "test-summary-1",
+      "description": "test-description-1"
+    }
 }

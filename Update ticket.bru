@@ -5,21 +5,17 @@ meta {
 }
 
 put {
-  url: {{ticket-service}}/api/v1/tickets/:id
+  url: {{ticket-service}}/api/v1/tickets/{{ticket-id}}
   body: json
   auth: none
 }
 
-params:path {
-  id: blah
-}
-
 body:json {
   {
-    "id": "1",
-    "version": "1",
+    "id": "{{ticket-id}}",
+    "version": "0",
     "summary": "test-summary-1",
     "description": "test-description-1",
-    "status": "open"
+    "status": "closed"
   }
 }

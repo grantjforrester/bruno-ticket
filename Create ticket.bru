@@ -17,6 +17,12 @@ headers {
 body:json {
     {
       "summary": "test-summary-1",
-      "description": "test-description-1"
+      "description": "test-description-1",
+      "status": "open"
     }
+}
+
+script:post-response {
+  let data = res.getBody();
+  bru.setVar("ticket-id", data.id);
 }
